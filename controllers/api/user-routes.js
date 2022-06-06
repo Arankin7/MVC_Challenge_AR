@@ -137,7 +137,7 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
-route.delete('/:id', withAuth, (req, res) =>{
+router.delete('/:id', withAuth, (req, res) =>{
     User.destroy({
         where: {
             id: req.params.id
