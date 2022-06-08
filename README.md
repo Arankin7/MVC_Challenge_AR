@@ -3,7 +3,7 @@
   ## Table of Contents
   * [Description](#description)
   * [Testing](#testing)
-  * [Link][#link]
+  * [Link](#link)
   * [Contact](#contact)
 
 
@@ -14,7 +14,7 @@
   To use this app you simply have to visit the site, create a username, then you will have the ability to create posts, edit your posts, and comment on posts.
 
   ## Link 
-  Link to deployed app: 
+  [Link to deployed app](https://enigmatic-hamlet-00526.herokuapp.com/)
 
   ## Contact 
   - Github: [Github](https://github.com/arankin7)
