@@ -1,5 +1,6 @@
-<fieldset class="login-form">
+<fieldset>
   <legend>Login</legend>
+  <form class="login-form">
     <div>
         <label for="email-login">Email: </label>
         <input type="text" id="email-login" />
@@ -11,27 +12,30 @@
     </div>
 
     <div>
-        <button type="submit">Login</button>
+        <button type="submit" class="login-form">Login</button>
     </div>
+  </form>
 </fieldset>
 
-<fieldset class="signup-form">
+<fieldset>
   <legend>Sign Up</legend>
-  <div>
-    <label for="username-signup">Username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">Email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">Password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">Sign Up</button>
-  </div>
+    <form class="signup-form">
+      <div>
+      <label for="username-signup">Username:</label>
+      <input type="text" id="username-signup" />
+    </div>
+    <div>
+      <label for="email-signup">Email:</label>
+      <input type="text" id="email-signup" />
+    </div>
+    <div>
+      <label for="password-signup">Password:</label>
+      <input type="password" id="password-signup" />
+    </div>
+    <div>
+      <button type="submit">Sign Up</button>
+    </div>
+  </form>  
 </fieldset>
 
 <script src="/javascript/login.js"></script>
