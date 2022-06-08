@@ -1,24 +1,24 @@
 {
-  "name": "mvc_challenge_ar",
+  "name": "just-tech-news",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arankin7/MVC_Challenge_AR.git"
+    "url": "git+https://github.com/Arankin7/just-tech-news.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arankin7/MVC_Challenge_AR/issues"
+    "url": "https://github.com/Arankin7/just-tech-news/issues"
   },
-  "homepage": "https://github.com/Arankin7/MVC_Challenge_AR#readme",
+  "homepage": "https://github.com/Arankin7/just-tech-news#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
@@ -28,6 +28,9 @@
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.16",
-    "sequelize": "^6.20.1"
+    "sequelize": "^6.20.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
   }
 }

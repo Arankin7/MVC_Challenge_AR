@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS mvc_tech_blog;
+DROP DATABASE IF EXISTS just_tech_news_db;
 
-CREATE DATABASE mvc_tech_blog; 
+CREATE DATABASE just_tech_news_db;

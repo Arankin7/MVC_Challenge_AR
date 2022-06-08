@@ -1,4 +1,4 @@
-const { Model, DataTypes} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const router = require('../controllers');
 const User = require('./User');
@@ -21,7 +21,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isUrl: true
+                isURL: true
             }
         },
         user_id: {
@@ -30,7 +30,7 @@ Post.init(
                 model: 'user',
                 key: 'id'
             }
-        }
+        }  
     },
     {
         sequelize,

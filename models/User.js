@@ -2,10 +2,10 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-// creates the User Model
+// Create our User model
 class User extends Model{
 
-    // method to check password
+    // set up method to run on instance data (per user) to check password
     checkPassword(loginPw){
         return bcrypt.compareSync(loginPw, this.password);
     }
@@ -21,14 +21,13 @@ User.init(
             primaryKey: true,
             autoIncrement: true
         },
-        username:{
+        username: {
             type: DataTypes.STRING,
             allowNull: false
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false,
-            // There cannot be any duplicate emails in this table
+            allowNull: false, 
             unique: true,
             validate: {
                 isEmail: true
@@ -38,11 +37,12 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                // minimum length of 8 characters
+                // minimum 8 characters for password
                 len: [8]
             }
         }
     },
+
     {
         hooks: {
             async beforeCreate(newUserData){
@@ -55,13 +55,13 @@ User.init(
                 return updatedUserData;
             }
         },
-
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'user'
     }
+
 );
 
 module.exports = User;

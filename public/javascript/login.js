@@ -1,4 +1,4 @@
-async function signupFormHandler(event) {
+async function signupFormHandler(event){
     event.preventDefault();
 
     const username = document.querySelector('#username-signup').value.trim();
@@ -13,12 +13,12 @@ async function signupFormHandler(event) {
                 email,
                 password
             }),
-            headers: { 'Content-Type': 'application/json'}
+            headers: { 'Content-Type': 'application/json' }
         })
 
-        // checking the response
+        // check the response status
         if(response.ok){
-            console.log('Success')
+            console.log('Success!!!')
         }
         else{
             alert(response.statusText)
@@ -39,11 +39,11 @@ async function loginFormHandler(event){
                 email,
                 password
             }),
-            headers: { 'Content-Type': 'application/json'}
+            headers: { 'Content-Type': 'application/json' }
         });
 
         if(response.ok){
-            console.log('Success');
+            console.log('success');
             document.location.replace('/dashboard');
         }
         else{
@@ -52,5 +52,5 @@ async function loginFormHandler(event){
     }
 }
 
-document.querySelector('.login').addEventListener('submit', loginFormHandler);
-document.querySelector('.signup').addEventListener('submit', signupFormHandler);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
