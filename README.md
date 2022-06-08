@@ -3,7 +3,7 @@
   ## Table of Contents
   * [Description](#description)
   * [Testing](#testing)
-  * [Link][#link]
+  * [Link](#link)
   * [Contact](#contact)
 
 
